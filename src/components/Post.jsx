@@ -1,11 +1,12 @@
+import { Avatar } from "./Avatar";
+import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 export const Post = () => {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
+          <Avatar
             src="https://github.com/MedeirosCode.png"
           />
           <div className={styles.authorInfo}>
@@ -46,6 +47,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias consecte
        <button type="submit">Publicar</button>
         </footer>
       </form>
+      <div className={styles.commentList}>
+
+      <Comment/>
+      <Comment/>
+      <Comment/>
+      </div>
     </article>
   );
 };

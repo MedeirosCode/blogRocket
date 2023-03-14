@@ -125,3 +125,7 @@ color: var(--gray-100);
 .commentForm button:hover{
     background: var(--green-300) ;
 }
+
+.commentList{
+    margin-top: 2rem;
+}
